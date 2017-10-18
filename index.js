@@ -84,7 +84,7 @@ module.exports.getService = function (receipt) {
 	}
 };
 
-module.exports.validate = function (service, receipt, cb) {
+module.exports.validate = function (service, receipt, sandbox, cb) {
 	if (receipt === undefined && cb === undefined) {
 		// we are given 1 argument as: const promise = .validate(receipt)
 		receipt = service;
@@ -103,7 +103,7 @@ module.exports.validate = function (service, receipt, cb) {
 	}
 	switch (service) {
 		case module.exports.APPLE:
-			apple.validatePurchase(null, receipt, cb);
+			apple.validatePurchase(null, receipt, sandbox, cb);
 			break;
 		case module.exports.GOOGLE:
 			google.validatePurchase(null, receipt, cb);
