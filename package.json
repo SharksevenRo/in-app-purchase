@@ -1,14 +1,14 @@
 {
-	"name": "in-app-purchase",
-	"description": "In-App-Purchase validation and subscription management for iOS, Android, Amazon, and Windows",
-	"version": "1.6.2",
+	"name": "iap-hlg",
+	"description": "base on In-App-Purchase and suport sanbox controll",
+	"version": "1.6.3",
 	"author": {
-		"name": "Nobuyori Takahashi",
-		"email": "voltrue2@yahoo.com"
+		"name": "Sharkseven",
+		"email": "937257166@qq.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/voltrue2/in-app-purchase.git"
+		"url": "https://github.com/SharksevenRo/in-app-purchase.git"
 	},
 	"dependencies": {
 		"xmldom": "0.1.19",
@@ -35,7 +35,8 @@
 		"in-app-purchase",
 		"in-app-billing",
 		"Validation",
-		"IAP"
+		"IAP",
+		"HLG"
 	],
 	"jshintConfig": {
 		"node": true,

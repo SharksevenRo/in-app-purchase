@@ -1,4 +1,5 @@
-# in-app-purchase
+# iap-hlg
+base on in-app-purchase and suport sandbox controll
 
 ©Nobuyori Takahashi < <voltrue2@yahoo.com> >
 
@@ -246,7 +247,8 @@ iap.setup(function (error) {
     if (error) {
         // error hmm
     }
-    iap.validate(iap.APPLE, receipt, function (error, response) {
+    // sandbox controll try sandbox mode
+    iap.validate(iap.APPLE, receipt, sandbox, function (error, response) {
         if (error) {
             // error
         }
